@@ -9,97 +9,98 @@
 <body class="page-body">
 
   <header class="main-header">
-
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo-catenergy-image-mobile.svg" width="33" height="38"
-        alt="Логотип: кот в костюме супергероя.">
-      <img class="main-header__logo-text" src="img/logo-catenergy-text.svg" width="101" height="18" alt="CAT ENERGY.">
+    <h1 class="visually-hidden">Интернет магазин "CAT ENERGY"</h1>
+    <a class="main-header__logo logo">
+        <img class="logo__img logo__img--icon" src="img/logo-catenergy-image-mobile.svg" width="33" height="38"
+            alt="Логотип: кот в костюме супергероя.">
+        <img class="logo__img logo__img--text" src="img/logo-catenergy-text.svg" width="101" height="18"
+            alt="CAT ENERGY.">
     </a>
     <nav class="main-header__navigation main-menu">
-      <button class="main-menu__button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+        <button class="main-menu__button burger" type="button">
+            <span class="visually-hidden">Меню</span>
+        </button>
 
-      <ul class="main-menu__list menu-links">
-        <li class="menu-links__item">
-          <a class="menu-links__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="menu-links__item">
-          <a class="menu-links__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="menu-links__item">
-          <a class="menu-links__link menu-links__link__current">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+
+        <ul class="main-menu__list">
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link" href="catalog.html">
+                    Каталог продукции
+                </a>
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link main-menu__link--current" href="#">
+                    Подбор программы
+                </a>
+            </li>
+        </ul>
     </nav>
-  </header>
-  <main class="main-container main-form">
-    <section class="program-selection">
-      <div class="program-selection-container container">
+</header>
+  <main class="main-container">
+    <section class="main-container__program-selection">
+      <div class="main-container__program-container container">
         <h1 class="container__title">Подбор программы</h1>
         <p class="container__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-        <form class="form" action="http://echo.htmlacademy.ru" method="post">
-
-          <div class="data-program-group-container">
-
-
-            <ul class="form__list form__data-list">
-              <li class="form__data-item">
-                <label class="form__label form__data-label" for="name">Имя:*</label>
-                <input class="form__data-field form-field" type="text" name="name" value="Барсик"
-                  placeholder="Укажите имя" id="name" required>
-              </li>
-              <li class="form__data-item">
-                <label class="form__label form__data-label" for="weight">Вес (кг):*</label>
-                <input class="form__data-field form-field" type="number" name="weight" value="7"
-                  placeholder="Укажите вес" id="weight" min="0" max="50">
-              </li>
-              <li class="form__data-item">
-                <label class="form__label form__data-label" for="age">Возраст (лет):</label>
-                <input class="form__data-field form-field" type="number" name="age" value="7"
-                  placeholder="Укажите возраст" id="age" min="0" max="30">
-              </li>
-            </ul>
+        <form class="container__form form" action="http://echo.htmlacademy.ru" method="post">
 
 
 
-            <ul class="form__list form__program-list form__program-list--radio">
-              <li class="form__program-item">
-                <label class="control-group-label" for="slimming">
-                  <input class="visually-hidden control-group-input" type="radio" name="program" id="slimming"
-                    value="slimming" checked>
 
-                  <span class="control-group-text">Похудение</span>
-                </label>
-              </li>
-              <li class="form__program-item">
-                <label class="control-group-label" for="weight-gain">
-                  <input class="visually-hidden control-group-input" type="radio" name="program" id="weight-gain"
-                    value="weight-gain">
-
-                  <span class="control-group-text">Набор массы</span>
-
-                </label>
-              </li>
-              <li class="form__program-item">
-                <label class="control-group-label" for="advice">
-                  <input class="visually-hidden control-group-input" type="radio" name="program" id="advice"
-                    value="advice">
-
-                  <span class="control-group-text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__field" type="text" name="name" value="Барсик"
+                placeholder="Укажите имя" id="name" required>
+            </li>
+            <li class="form__data-item">
+              <label class="form__label form__data-label" for="weight">Вес (кг):*</label>
+              <input class="form__data-field form-field" type="number" name="weight" value="7" placeholder="Укажите вес"
+                id="weight" min="0" max="50">
+            </li>
+            <li class="form__data-item">
+              <label class="form__label form__data-label" for="age">Возраст (лет):</label>
+              <input class="form__data-field form-field" type="number" name="age" value="7"
+                placeholder="Укажите возраст" id="age" min="0" max="30">
+            </li>
+          </ul>
 
 
-          </div>
+
+          <ul class="form__list form__program-list form__program-list--radio">
+            <li class="form__program-item">
+              <label class="control-group-label" for="slimming">
+                <input class="visually-hidden control-group-input" type="radio" name="program" id="slimming"
+                  value="slimming" checked>
+
+                <span class="control-group-text">Похудение</span>
+              </label>
+            </li>
+            <li class="form__program-item">
+              <label class="control-group-label" for="weight-gain">
+                <input class="visually-hidden control-group-input" type="radio" name="program" id="weight-gain"
+                  value="weight-gain">
+
+                <span class="control-group-text">Набор массы</span>
+
+              </label>
+            </li>
+            <li class="form__program-item">
+              <label class="control-group-label" for="advice">
+                <input class="visually-hidden control-group-input" type="radio" name="program" id="advice"
+                  value="advice">
+
+                <span class="control-group-text">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+
+
 
           <div class="form__contacts__wrapper">
             <h2 class="form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
